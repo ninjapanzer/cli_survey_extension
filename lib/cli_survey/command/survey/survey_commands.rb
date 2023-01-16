@@ -11,5 +11,15 @@ module CliSurvey::Command::Survey
     def stop
       puts "bye"
     end
+
+    desc "list", "Start the survey"
+    def list
+      ListCommand.new
+    end
+
+    desc "init", "Start the survey"
+    def init
+      InitCommand.new
+    end
   end
 end

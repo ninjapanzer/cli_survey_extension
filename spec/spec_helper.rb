@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 require "cli_survey"
+require 'thor/runner'
+
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
