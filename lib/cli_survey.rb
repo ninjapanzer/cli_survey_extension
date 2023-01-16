@@ -13,6 +13,6 @@ module CliSurvey
   # Your code goes here...
 end
 
-loader.eager_load_dir("#{__dir__}/cli_survey/command")
+# loader.eager_load_dir("#{__dir__}/cli_survey/command")
 
-# CliSurvey::Command::Survey.start(ARGV)
+CliSurvey::Command::Survey::Command.start(ARGV) if $0 == __FILE__
