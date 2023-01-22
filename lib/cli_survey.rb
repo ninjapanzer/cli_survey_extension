@@ -9,6 +9,9 @@ loader = Zeitwerk::Loader.for_gem(warn_on_extra_files: false)
 loader.setup
 
 module CliSurvey
+  CONFIG = {
+    'surveyDir' => File.join(Dir.home,'.cli','surveyDir'),
+  }
   class Error < StandardError; end
   # Your code goes here...
 end

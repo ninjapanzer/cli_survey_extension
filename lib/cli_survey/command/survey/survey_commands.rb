@@ -17,9 +17,12 @@ module CliSurvey::Command::Survey
       ListCommand.new
     end
 
-    desc "init", "Start the survey"
-    def init
-      InitCommand.new
+    desc "init [options] <survey name>", "Create a new survey"
+    option :open, type: :boolean, default: true, desc: "open survey after creation"
+    def init(survey_name)
+      puts options
+      cmd = InitCommand.new(args: {name: survey_name}, options: options)
+      cmd.create_survey_file
     end
   end
 end

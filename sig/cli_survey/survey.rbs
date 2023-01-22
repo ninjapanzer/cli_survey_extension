@@ -1,0 +1,5 @@
+module CliSurvey
+  class Survey
+    @survey_file: String
+  end
+end
