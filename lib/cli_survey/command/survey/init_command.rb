@@ -1,6 +1,5 @@
 module CliSurvey::Command::Survey
   class InitCommand
-    include Thor::Actions
 
     attr_reader :survey_service, :options
     def initialize(args: {}, options: {}, config: {})

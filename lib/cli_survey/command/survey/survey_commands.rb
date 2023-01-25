@@ -1,5 +1,6 @@
 module CliSurvey::Command::Survey
   class SurveyCommands < Thor
+    namespace :survey
     desc "start", "Start the survey"
     def start
       db = Cli::Storage.db(db: Cli::CONFIG['surveyDb'])
