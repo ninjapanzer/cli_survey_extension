@@ -7,8 +7,8 @@ module CliSurvey::Command::Survey
     desc "survey SUBCOMMAND", "Take a survey"
     subcommand "survey", SurveyCommands
 
-    def self.register_command
-      Thor.register(SurveyCommands, "survey", "survey SUBCOMMAND", "Take a survey")
+    def self.prepare
+      register_command(SurveyCommands, "survey")
     end
   end
 end
