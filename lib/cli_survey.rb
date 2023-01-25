@@ -14,6 +14,10 @@ module CliSurvey
   }
   class Error < StandardError; end
   # Your code goes here...
+
+  class Start
+
+  end
 end
 
 # loader.eager_load_dir("#{__dir__}/cli_survey/command")
