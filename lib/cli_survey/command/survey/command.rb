@@ -3,12 +3,10 @@ module CliSurvey::Command::Survey
   # The survey command will read a YAML file and ask the user questions
   # The Answers will be stored in a sqlite database
   class Command < Thor
+    using CliToolkit::Refinements::ThorSubcommandRegistry
+
     namespace :survey
     desc "survey SUBCOMMAND", "Take a survey"
-    subcommand "survey", SurveyCommands
-
-    def self.prepare
-      register_command(SurveyCommands, "survey")
-    end
+    subcommand commands_klass: SurveyCommands
   end
 end
