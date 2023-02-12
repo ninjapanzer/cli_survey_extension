@@ -34,7 +34,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "zeitwerk", "~> 2.6.6"
   spec.add_dependency "thor", "~> 1.2.1"
-  spec.add_dependency "sqlite3", "~> 1.4.2"
+  spec.add_dependency "sqlite3", "~> 1.6"
   spec.add_dependency "launchy", "~> 2.5.2"
 
   # spec.add_development_dependency "rspec-thor", "~> 1.2.1"
